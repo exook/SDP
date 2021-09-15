@@ -1,0 +1,130 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+%{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+{0pt}{0.0ex plus 1ex minus .2ex}{1.0ex plus .2ex}
+
+\newcommand{\name}{ECW\ }
+\newcommand{\nameNospace}{ECW}
+\newcommand{\namep}{ECW.}
+
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumii}{\theenumi.\arabic{enumii}}
+\renewcommand{\theenumiii}{\theenumii.\arabic{enumiii}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\lhead{ Responsible: Alexander Ekman \& Linnea Johnsson \\ Date: \today}  \rhead{Document number: PUSS21411 \\ Version: 1.0}
+\renewcommand{\headrulewidth}{0.5pt} 
+
+
+ \title{SDP - Software Development Plan}
+ \author{Team 1 - ETSN05}
+
+\begin{document}
+\date{}
+\maketitle
+\thispagestyle{fancy}
+\newpage
+
+\section*{Revision History}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|p{55mm}|l|}
+    \hline
+    Date & Version & Description & Author \\ 
+    \hline\hline 
+    2021-09-14 & 1.0 & First draft and outlines of all sections & Linnea Johnsson \\
+    \hline
+    & & & \\ 
+    \hline
+    \end{tabular}
+    \label{tab:history}
+\end{table}
+\newpage
+ 
+\section*{Referenced Documents}
+\begin{enumerate}
+    \item Programvaruutveckling för Stora System - Projekthandledning 2021 (PH)
+    \item Product Requirements Document - PUSS21412 (PRD)
+    \item Backlog - PUSS21413
+    \item Sprintlog - PUSS21414
+    \item Software Top Level Design Document (STLDD) - PUSS21415
+    \item Software Detailed Design Document (SDD) - PUSS21416
+    \item Software Verification and Validation Report (SVVR) - PUSS21417
+    \item System Specification Document (SSD) - PUSS21418
+    \item (PFR) - PUSS21419
+
+\end{enumerate}
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+This Software Development Plan (SDP) details the development plan produced for the development of the web-app based carpool service called ETSN05\_PG1 Carpool Webb-app (\nameNospace). The plan includes the process model with the project's different phases and their corresponding time-estimates and major events, and the tailoring of the project. The SDP also includes a description of the project's organisation, time plan, configuration handling, and quality review, as well as a a risk analysis of the project.  
+
+\section{Process model}
+The process model mostly follow the directions from the PH chapter 2. The things that differ, and/or need more explanation, are described below.
+\subsection{Phases}
+\subsubsection{Phase 1}
+\subsubsection{Phase 2}
+\subsubsection{Phase 3}
+\subsubsection{Phase 4}
+\subsection{Tailoring}
+\section{Project Organisation}
+The project is organized into a Project Group (PG), Developing Group (DG), and a System Group (SG). The PG consists of the Project Owners (PO) and Scrum Master(SM), the DG consists of developers and the architects, and the SG consists soly of the architects. Within the DG there are different areas of responsibilities. There are mainly four areas of responsibilities that corresponds to three different groups, and one sole role. There is the Algorithms Group (AG), the Frontend Group (FG), and the Backend Group(BG). There is also one role responsible for testing (TR). 
+
+Besides the above mentioned internal actors the project has an external section chief, a customer, a reviewer, and three different experts. The experts have different areas of expertise. There is one requirement expert, one test expert, and one design expert.
+\subsection{Project team members}
+The project's team member and their corresponding roles can be seen in table \ref{team}. All the team members are enrolled in the course ETSN05 and participating in the project for educational purposes. The members have been given their different groups and roles based on interests and experience. 
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+        Group & Name & Role \\
+        \hline \hline
+        PG & Alexander Ekman & PO \\ 
+        & Linnea Johnsson & PO \\
+        & David Ravanelli & SM \\
+        \hline
+        AG & Max Fogwall & Architect \& TR \\
+        & Emil Friberg & Developer \\
+        & Gustav Broman & Developer \\
+        \hline
+        FG & Erik Kullberg & Architect \\
+        & Axel Domell & Developer\\ 
+        & Erik Busk & Developer \\
+        & Johannes Bastmark & Developer\\
+        \hline
+        BG & Anton Håkansson & Developer\\
+        & Elsa Lindhé & Developer\\
+        & Eric Schyllert  & Developer\\
+        \hline
+    \end{tabular}
+    \caption{The ECW project's team members}
+    \label{team}
+\end{table}
+
+\section{Configuration Handling}
+This project consists of several documents of different character, varying from source code to text documents such as this. There are two main libraries for the different types of configuration units. The first one is Gitlab that contains the project's source code, the backlog, the sprint logs, and the SG's \& DG's drafts of the STLDD, SDD, SVVR, \& SSD. The main text documents such as the SDP, PRD, and PFR are stored in a shared Google Drive folder. The Baseline versions of the STLDD, SDD, SVVR, \& SSD will also be stored in the folder, but in order to enable a better workflow for the DG and the SG the drafts are committed to the GitLab repository and then formated and stored in the drive folder. 
+
+The configuration units are numbered according to the PH
+
+\section{Time plan}
+\subsection{Gantt chart}
+\section{Time plan follow-up and quality review}
+\section{Risk analysis}
+
+\end{document}
